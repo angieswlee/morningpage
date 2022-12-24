@@ -1,0 +1,29 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#modal-contents {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 60%; /* Could be more or less, depending on screen size */
+    border: 1px solid #000000;
+}
+
+#modal-close {
+    color: #aaa;
+    float: center;
+}
+
+#modal-close:hover, #modal-close:focus {
+    color: black;
+    cursor: pointer;
+}
