@@ -1,0 +1,124 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'NanumSquare';
+}
+
+.hidden {
+    display: none;
+}
+
+body > h1 {
+    margin-top: 110px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.statics {
+    /* display: flex; */
+    /* flex-direction: column; */
+
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 3em;
+    text-align: left;
+    /* background-color: black; */
+    /* color: white; */
+
+    margin: 50px 0;
+    padding: 0.5em 25% 0.5em 25%;
+}
+
+.label {
+    font-weight: 500;
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    padding-left: 24%;
+}
+
+.data {
+    text-align: left;
+    width: 60%;
+    /* padding-right: 10%; */
+}
+
+#text {
+    display: flex;
+    justify-content: flex-start;
+
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 2em;
+
+    margin: 50px 100px 50px 100px;
+}
+
+button {
+    background: none;
+    outline: none;
+}
+
+button {
+    display: inline-flex;
+
+    border: 1px solid transparent;
+    color: white;
+
+    font-size: 14px;
+
+    padding: 0.5em 1em;
+}
+
+.button-total {
+    display: inline-flex;
+
+    background-color: black;
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button > span {
+    padding-left: 0.5em;
+}
+
+#copy {
+    background-color: #9797ff;
+    margin-right: 0px;
+}
+
+#share {
+    margin-left: 0px;
+}
+
+.button-total :hover {
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
+
+#tothetop {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+
+    /* border: solid 3px black; */
+    background: black;
+    color: white;
+    height: 16.5px;
+    padding: 8px;
+}
+
+#tothetop-wrap :hover {
+    background: aquamarine;
+    color: black;
+}
+
+#bottom {
+    margin-bottom: 100px;
+}

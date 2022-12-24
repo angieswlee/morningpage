@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="css/result-style.css">
+    <title>Morning Page</title>
+</head>
+<body>
+    <h1>Morning Page</h1>
+    <div class="statics">
+        <div>
+            <label class="label">DATE</label>
+            <span class="data" id="statics-date"></span>
+        </div>
+        <div>
+            <label class="label">START</label>
+            <span class="data" id="time-start"></span>
+        </div>
+        <div>
+            <label class="label">END</label>
+            <span class="data" id="time-end"></span>
+        </div>
+        <div>
+            <label class="label">총 시간</label>
+            <span class="data" id="time-total"></span>
+        </div>
+        <div>
+            <label class="label">PAUSE</label>
+            <span class="data" id="count-pause"></span>
+        </div>
+        <div>
+            <label class="label">작성한 글자 수</label>
+            <span class="data" id="count-character"></span>
+        </div>
+    </div>
+    <div class="button-total">
+        <div id="copy">
+            <button>
+                <ion-icon name="copy-sharp"></ion-icon>
+                <span>TEXT COPY</span>
+            </button>
+        </div>
+        <div id="share">
+            <button>
+                <ion-icon name="share-sharp"></ion-icon>
+                <span>SHARE</span>
+            </button>
+        </div>
+    </div>
+    <hr>
+    <div id="text"></div>
+    <hr id="bottom">
+    <div id="tothetop-wrap">
+        <div id="tothetop" class="hidden">
+            <ion-icon name="arrow-up-sharp"></ion-icon>
+        </div>
+    </div>
+
+    <div class="book1">
+        <div id="title">책이름</div>
+        <div><img src="#" alt="#"></div>
+    </div>
+
+
+    <script src="js/result-content.js"></script>
+    <script src="js/result-topbtn.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
