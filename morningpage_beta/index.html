@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" type="text/css" href="css/intro-style.css">
+    <title>Morning Page</title>
+</head>
+<body>
+    <h1>Morning Page</h1>
+
+    <div id="description">
+        <p>
+            모닝페이지는 글로 쓰는 명상이라고 해요.<br>
+            아침에 잠에서 깨어나, 의식과 무의식의 사이를 헤맬 때 나는 어떤 생각을 하는지 써보는 시간이에요.<br>
+            잠이 덜 깨서 몽롱하거나, 세수도 하지 않은 자연스러운 시간일 때가 가장 좋아요!<br>
+            관찰자아나 자기검열이 제대로 작동하지 않은 가장 본연의 감각이 살아있을 때니까요.
+        </p>
+        <!-- <hr> -->
+        <p>
+            자, 그럼 시작해볼까요?<br>
+            모닝페이지를 쓸 시간을 입력해주세요!
+        </p>
+    </div>
+
+
+    <div id="date-timer-wrap">
+        <div id="date-wrap">
+            <label>DATE</label>
+            <span id="date"></span>
+        </div>
+        <form id="timer-wrap">
+            <div id="timer-label-input-wrap">
+                <label>TIME</label>
+                <div id="timer-submit-input">
+                        <input type="number" id="timer" placeholder="분을 입력해주세요." min="0" autofocus>
+                        <span>분</span>
+                </div>
+            </div>
+            <div id="timer-btn-wrap">
+                <button id="timer-submit-btn">
+                    <!-- <img src="icon/start_arrow.svg"> -->
+                        <!-- <img src="icon/Intersect.svg"> -->
+                        <!-- <object data="icon/Intersect.svg"></object> -->
+                        <!-- <svg width="20" height="34.61538" viewBox="0 0 26 32" fill="none" stroke="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9561 1.0299C13.7201 0.88643 13.4126 0.961394 13.2691 1.19734L11.0427 4.85866L0.315703 22.4996C0.267484 22.5789 0.242287 22.67 0.242932 22.7628L0.297087 30.5464C0.298293 30.7197 0.389189 30.8801 0.537295 30.9701C0.685401 31.0602 0.869586 31.0671 1.02404 30.9884L7.95968 27.4552C8.04237 27.4131 8.11171 27.3488 8.15993 27.2695L18.8869 9.62855L21.1133 5.96723C21.2568 5.73128 21.1818 5.4237 20.9459 5.28023L13.9561 1.0299ZM12.1569 4.951L13.8637 2.14412L19.9991 5.87488L18.2923 8.68177L12.1569 4.951ZM11.6374 5.80544L17.7727 9.5362L7.37926 26.6286L1.29143 29.7299L1.2439 22.8978L11.6374 5.80544ZM9.75721 31.0429H25.7572V30.0429H9.75721L9.75721 31.0429Z" fill="black"/>
+                        </svg> -->
+                        <ion-icon name="sunny-sharp"></ion-icon>
+                        <span>START</span>
+                        <!-- <ion-icon name="arrow-forward-sharp"></ion-icon> -->
+                </button>
+            </div>
+
+            <div id="timer-btn">
+                <!-- <button>5분</button>
+                <button>15분</button>
+                <button>30분</button> -->
+            </div>
+        </form>
+    </div>
+    <div class="svg-box">
+        <!-- SUN  -->
+        <svg width="154" height="154" viewBox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle id="sun" cx="77" cy="77" r="77" fill="#FFDCDC" />
+        </svg>
+    </div>
+    <footer class="footer">
+        <div><a href="#">@sowon</a></div>
+    </footer>
+    <script src="js/intro.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
