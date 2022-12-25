@@ -12,6 +12,7 @@ body {
 }
 
 body > h1 {
+    font-family: 'Unbounded', cursive;
     margin-top: 110px;
     text-align: center;
     font-size: 40px;
