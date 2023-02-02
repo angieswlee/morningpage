@@ -11,7 +11,7 @@ html {
 
 body h1 {
     font-family: 'Unbounded', cursive;
-    margin-top: 110px;
+    margin-top: 4em;
     font-size: 40px;
     text-align: center;
 }
@@ -146,7 +146,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #timer-btn-wrap :hover {
-    background-color: aquamarine;
+    background-color: #7fffd4;
     cursor: pointer;
     stroke: #000000;
     color: #000000;
@@ -174,7 +174,7 @@ input[type=number]::-webkit-outer-spin-button {
 .svg-box {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 svg {
@@ -184,6 +184,7 @@ svg {
 
 /* SUN */
 svg:first-child {
+    width: 15%;
     bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
@@ -194,19 +195,32 @@ svg:first-child {
     animation: sunAnim2 5s infinite ease-in-out;
 }
 
+/* MOUNTAIN */
+svg:nth-child(2) {
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+svg:nth-child(3) {
+    bottom: 0;
+    width: 100%;
+    z-index: -2;
+}
+
 /* ANIMATION */
 @keyframes sunAnim1 {
     to {
-        bottom: 90%;
+        bottom: 120%;
     }
 }
 
 @keyframes sunAnim2 {
     from {
-        fill: #FFDCDC;
+        fill: #fa976d;
     }
 
     to {
-        fill: orangered;
+        fill: #ff7b42;
     }
 }

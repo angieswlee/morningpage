@@ -52,10 +52,10 @@ function showTime(time) {
     let hour = time.getHours();
     const mins = String(time.getMinutes()).padStart(2, "0");
 
-    affix = (hour >= 12) ? "PM" : "AM";
+    affix = (hour >= 12) ? "pm" : "am";
     hour = String((hour + 11) % 12 + 1).padStart(2, "0");
     
-    return `${affix} ${hour} : ${mins}`
+    return `${hour} : ${mins} ${affix}`
 }
 
 const inputTime = new Date();

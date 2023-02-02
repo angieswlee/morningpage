@@ -56,6 +56,7 @@ body > textarea {
     min-width: 500px;
     
     font-size: 12px;
+    line-height: 2em;
     outline: none;
     border: none;
 }
@@ -114,7 +115,8 @@ span {
 }
 
 .progress-inner {
-   background: #641119;
+   /* background: #451111; */
+   background: #292749;
    position: absolute;
    width: 100%;
    height: 100%;

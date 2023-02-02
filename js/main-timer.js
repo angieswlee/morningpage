@@ -13,7 +13,6 @@ function handleInterval() {
 
 timerBtnPlay.addEventListener("click", handleInterval);
 timerBtnPause.addEventListener("click", handleInterval);
-// $("#morning-page").one("keypress", startTimer());
 
 function updateInterFaceTime() {
     const minutesR = Math.floor(remainingSeconds / 60);
@@ -30,7 +29,7 @@ function updateInterFaceTime() {
         let confirmAction = confirm("타이머가 끝났어요! 조금 더 쓸까요?");
         if (confirmAction) {
             clearInterval(interval);
-            $("#morning-page").one("keypress", continueTimer());
+            continueTimer();
         } else {
             // 종료버튼 이벤트 생성 및 결과 페이지로 연결
             handelDoneBtn();
