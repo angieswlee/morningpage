@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <link rel="stylesheet" href="css/result-style.css">
+    <link rel="stylesheet" href="css/result-modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap" rel="stylesheet">
     <title>Morning Page</title>
 </head>
@@ -60,8 +61,57 @@
         </div>
     </div>
 
+    <!-- MODAL -->
+    <div id="modal-wrap" class="modal">
+        <div id="modal-contents">
+            <div id="modal-close">
+                <ion-icon name="close-sharp"></ion-icon>
+            </div>
+            <img id="modal-img" src="img/result-img.svg">
+            <div id="modal-date"></div>
+            <div id="modal-time"></div>
+            <div>모닝페이지를 완료했어요.</div>
+            <div id="summary-result">
+                <span class="hidden" id="modal-period"></span>
+                <span class="hidden" id="modal-pause"></span>
+                <span class="hidden" id="modal-characters"></span>
+                <span class="hidden">썼어요.</span>
+            </div>
+            <div id="summary-btn">
+                <div>
+                    <button>
+                        <ion-icon name="time-sharp"></ion-icon>
+                        <span>TOTAL TIME</span>
+                    </button>
+                </div>
+                <div>
+                    <button>
+                        <ion-icon name="pause-sharp"></ion-icon>
+                        <span>PAUSE 횟수</span>
+                    </button>
+                </div>
+                <div>
+                    <button>
+                        <ion-icon name="language-sharp"></ion-icon>
+                        <span>글자 수</span>
+                    </button>
+                </div>
+            </div>
+            <p>
+                아침을 뿌듯하게 잘 열었어요. <br>
+                벅차는 마음을 여기저기 공유해보세요!
+            </p>
+            <div id="share-link">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
+        </div>
+    </div>
+
     <script src="js/result-content.js"></script>
     <script src="js/result-topbtn.js"></script>
+    <script src="js/result-modal.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

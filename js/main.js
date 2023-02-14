@@ -7,7 +7,7 @@ const textArea = document.getElementById("morning-page");
 timerShow.innerHTML = 
     `
         <span id="timer"></span>
-        <div class="button-wrap play">
+        <div class="button-wrap play blink">
             <button id="play">
                 <ion-icon name="play-sharp"></ion-icon>
                 <span>PLAY</span>
