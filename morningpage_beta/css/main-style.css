@@ -14,6 +14,7 @@ body {
 }
 
 body > h1 {
+    font-family: 'Unbounded', cursive;
     margin-top: 110px;
     text-align: center;
     font-size: 40px;
@@ -55,6 +56,7 @@ body > textarea {
     min-width: 500px;
     
     font-size: 12px;
+    line-height: 2em;
     outline: none;
     border: none;
 }
@@ -86,7 +88,18 @@ button {
 
 .play {
     background-color: #9797ff;
-    color: black;
+    /* color: black; */
+}
+
+.blink {
+    animation: blink-effect 0.8s step-start infinite;
+    animation-delay: 3s;
+}
+
+@keyframes blink-effect {
+    50% {
+        background-color: #000000;
+    }
 }
 
 .button-wrap :hover {
@@ -94,16 +107,25 @@ button {
     background-color: aquamarine;
     color: black;
     cursor: pointer;
+
+    animation-play-state: paused;
 }
 
 #timer {
+    width: 70px;
     margin-right: 15px;
+    text-align: center;
+}
+
+#main-date {
+    word-spacing: 1em;
 }
 
 span {
     padding-left: 0.5em;
 }
 
+/* 프로그레스 바  */
 .progress {
     width: 100%;
     height: 40px;
@@ -113,7 +135,8 @@ span {
 }
 
 .progress-inner {
-   background: #641119;
+   /* background: #451111; */
+   background: #292749;
    position: absolute;
    width: 100%;
    height: 100%;

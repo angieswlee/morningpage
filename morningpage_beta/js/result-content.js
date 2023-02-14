@@ -24,14 +24,17 @@ paintEndTime.innerText = localStorage.getItem("end");
 // 4. 총 시간 표시
 const handleTotalTime = localStorage.getItem("total");
 const totalMin = Math.floor(handleTotalTime / 60);
+const totalSec = handleTotalTime % 60;
 
 const totalExtraTime = localStorage.getItem("extrasec");
 const totalExtraMin = Math.floor(totalExtraTime / 60);
 const totalExtraSec = totalExtraTime % 60;
 
-if (totalExtraTime === "null") { 
+if (totalExtraTime === "null") {
+    // 추가 시간이 없는 경우
     paintTotalTime.innerText = `${totalMin} 분 / ${localStorage.getItem("time")} 분`;    
 } else if (totalExtraTime !== "null") {
+    // 추가 시간까지 작성한 경우
     paintTotalTime.innerText = `${totalMin} 분  ( + ${totalExtraMin} 분 ${totalExtraSec} 초 )  / ${localStorage.getItem("time")} 분`
 }
 
