@@ -62,7 +62,7 @@ const valuePause = Number(localStorage.getItem("pause"));
 if (valuePause === 0) {
     modalPause.innerText = `쉬지 않고`;
 } else if (valuePause !== 0) {
-    modalPause.innerText = `${valuePause} 번`;
+    modalPause.innerText = `${valuePause} 번 쉬고`;
 }
 
 modalCharacters.innerText = `총 ${localStorage.getItem("length")} 글자`;
