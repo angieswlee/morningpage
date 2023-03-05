@@ -30,15 +30,45 @@
     line-height: 2em;
 }
 
+#summary {
+    height: 20rem;
+    margin: 20px 0;
+    background-image: url(img/result-img.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
 #modal-img {
-    width: 60%;
-    height: 60%;
+    width: 40vw;
+    height: 40vh;
+
+    /* position: absolute; */
+    /* left: auto; */
+    z-index: 0;
 }
 
 #modal-date {
     font-family: 'Unbounded', cursive;
     font-size: 30px;
-    margin: 1em 0;
+    color: #7fffd4;
+    
+    /* width: 218px; */
+    line-height: 40px;
+    padding-top: 4em;
+}
+
+#modal-time {
+    font-family: 'Unbounded', cursive;
+    font-size: 21px;
+    color: white;
+
+    padding-top: 4.6em;
+}
+
+#summary-result {
+    color: white;
 }
 
 #modal-close {
